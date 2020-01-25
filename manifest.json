@@ -1,0 +1,17 @@
+{
+	"engineId": "9e611ad7-2d3b-48f6-a51b-0a1ba40feab4",
+	"url": "https://github.com/veritone/webstream-adapter",
+	"category": "ingestion",
+	"engineMode": "stream",
+	"externalCalls": [],
+	"preferredInputFormat": "application/json",
+	"outputFormats": ["video/webm"],
+	"clusterSize": "custom",
+	"customProfile": "webstream-adapter",
+	"initialConcurrency": 50,
+	"maxConcurrency": 50,
+	"schedule": "recurring",
+	"ingestion": {
+		"supportedSourceTypes": ["6"]
+	}
+}

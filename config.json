@@ -1,0 +1,30 @@
+{
+	"engineId": "9e611ad7-2d3b-48f6-a51b-0a1ba40feab4",
+	"veritoneAPI": {
+		"baseURL": "https://api.aws-dev.veritone.com",
+		"graphQLEndpoint": "/v3/graphql",
+		"timeout": "60s",
+		"assetTimeout": "1m",
+		"debug": false
+	},
+	"messaging": {
+		"kafka": {
+			"brokers": [
+				"kafka:9092"
+			],
+			"producerMaxRetries": 1000,
+			"producerTimeout": "10s"
+		}
+	},
+	"supportedTextMimeTypes": [
+		"application/msword",
+		"application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+		"application/pdf",
+		"message/rfc822",
+		"application/vnd.ms-outlook",
+		"text/plain",
+		"text/plain; charset=utf-8",
+		"application/vnd.ms-powerpoint",
+		"application/rtf"
+	]
+}

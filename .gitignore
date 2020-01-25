@@ -1,0 +1,7 @@
+.DS_Store*
+.vscode/
+webstream-adapter
+vendor/
+local
+debug
+dash.mpd

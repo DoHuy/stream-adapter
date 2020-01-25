@@ -1,0 +1,13 @@
+{
+	"jobId": "job1",
+	"taskId": "task1",
+	"taskPayload": {
+		"cacheToS3Key": "offline_test/test",
+		"sourceId": "39160",
+		"scheduledJobId": "24130",
+		"sourceDetails": {
+			"radioStreamUrl": "http://www.ophanim.net:8670/live"
+		},
+		"recordDuration": "1m"
+	}
+}

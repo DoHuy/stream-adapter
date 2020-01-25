@@ -1,0 +1,9 @@
+{
+  "jobId": "job1",
+  "taskId": "task1",
+  "recordingId": "400002379",
+  "taskPayload": {
+    "url": "http://66.193.157.18/mjpg/video.mjpg",
+    "recordDuration": "30s"
+  }
+}

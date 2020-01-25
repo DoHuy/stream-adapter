@@ -1,0 +1,26 @@
+version: '2.1'
+
+services:
+  media:
+    image: webstream-adapter:latest
+    build: 
+      context: .
+      args:
+        GITHUB_ACCESS_TOKEN: $GITHUB_ACCESS_TOKEN
+    links:
+      - kafka
+    environment:
+      VERITONE_API_TOKEN: $VERITONE_API_TOKEN
+      PAYLOAD_JSON: $PAYLOAD_JSON
+      STREAM_OUTPUT_TOPIC: $STREAM_OUTPUT_TOPIC
+    entrypoint: /app/webstream-adapter
+
+  kafka:
+    image: spotify/kafka
+    hostname: kafka
+    environment:
+      ADVERTISED_HOST: kafka
+      ADVERTISED_PORT: 9092
+    ports:
+      - "2181:2181"
+      - "9092:9092"

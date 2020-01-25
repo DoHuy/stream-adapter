@@ -1,0 +1,9 @@
+{
+  "jobId": "job1",
+  "taskId": "task1",
+  "recordingId": "400002379",
+  "token": "i_am_a_token",
+  "taskPayload": {
+    "url": "https://api.uk.veritone.com/media-streamer/stream/610039571/dash.mpd"
+  }
+}

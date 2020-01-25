@@ -1,0 +1,9 @@
+{
+  "jobId": "job1",
+  "taskId": "task1",
+  "recordingId": "400002379",
+  "taskPayload": {
+    "url": "http://wkwf-am.akacast.akamaistream.net/7/984/99574/v1/auth.akacast.akamaistream.net/wkwf-am",
+    "recordDuration": "30s"
+  }
+}

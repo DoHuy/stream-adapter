@@ -1,0 +1,9 @@
+{
+  "jobId": "job1",
+  "taskId": "task1",
+  "recordingId": "400002379",
+  "taskPayload": {
+    "url": "http://www.ophanim.net:8670/live",
+    "recordDuration": "30s"
+  }
+}

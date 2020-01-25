@@ -1,0 +1,10 @@
+{
+  "jobId": "job1",
+  "taskId": "task1",
+  "recordingId": "400002379",
+  "taskPayload": {
+    "url": "https://stream-us1-foxtrot.dropcam.com/nexus_aac/ff57eb965e78489e860799d686edbb08/playlist.m3u8",
+    "recordStartTime": "2019-01-23T01:39:00Z",
+    "recordEndTime": "2019-01-23T02:39:00Z"
+  }
+}
