@@ -21,8 +21,8 @@ Or, to build and run as a Docker container, all you need is:
 Get the repo:
 
 ```
-go get github.com/veritone/webstream-adapter
-cd $GOPATH/src/github.com/veritone/webstream-adapter
+go get github.com/webstream-adapter
+cd $GOPATH/src/github.com/webstream-adapter
 ```
 
 To build, run:
@@ -31,10 +31,10 @@ To build, run:
 make
 ```
 
-Obtain a Veritone user token and set it as an environment variable. Also, set your Kafka broker addresses, Github user token, payload and an output topic, partition and prefix:
+Obtain a user token and set it as an environment variable. Also, set your Kafka broker addresses, Github user token, payload and an output topic, partition and prefix:
 
 ```
-export VERITONE_API_TOKEN=XXXXXXXXXXXXXXXXXXXXXXXXX
+export API_TOKEN=XXXXXXXXXXXXXXXXXXXXXXXXX
 export GITHUB_ACCESS_TOKEN=XXXXXXXXXXXXXXXXXXXXXXXXX
 export KAFKA_BROKERS=kafka1:9092,kafka2:9092
 export STREAM_OUTPUT_TOPIC=stream_1:0:1234abcd__
@@ -119,29 +119,21 @@ docker run -d --net ExampleNetwork -p 2181:2181 -p 9092:9092 --rm --env ADVERTIS
 3. Run the adapter container
 
 ```
-export VERITONE_API_TOKEN=xxxxxxxxxxxxxxxxxxx
+export API_TOKEN=xxxxxxxxxxxxxxxxxxx
 export STREAM_OUTPUT_TOPIC=xxxxxxxxxxxxxxxxxxx
-docker run -t --net ExampleNetwork --rm --env VERITONE_API_TOKEN --env STREAM_OUTPUT_TOPIC webstream-adapter -payload payload.json
+docker run -t --net ExampleNetwork --rm --env API_TOKEN --env STREAM_OUTPUT_TOPIC webstream-adapter -payload payload.json
 ```
 
 This will run webstream-adapter using the default payload file included in the container. To run it using a custom payload, set the `PAYLOAD_JSON` environment variable:
 
 ```
 export PAYLOAD_JSON=xxxxxxxxxxxxxxxxxxx
-docker run -t --net ExampleNetwork --rm --env VERITONE_API_TOKEN --env STREAM_OUTPUT_TOPIC --env PAYLOAD_JSON webstream-adapter
+docker run -t --net ExampleNetwork --rm --env API_TOKEN --env STREAM_OUTPUT_TOPIC --env PAYLOAD_JSON webstream-adapter
 ```
 
 # Check job, tasks status
 
 Login to CMS
-
-Open api graphql via browser
-
-```
-dev: https://api.aws-dev.veritone.com/v3/graphiql
-stage: https://api.stage.veritone.com/v3/graphiql
-us-prod: https://api.veritone.com/v3/graphiql
-uk-prod: https://api.uk.veritone.com/v3/graphiql
 ```
 
 Use query as example bellow to get job, task status, target, engine, payload, output, ...
