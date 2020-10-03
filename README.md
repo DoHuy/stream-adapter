@@ -83,7 +83,7 @@ The following environment variables are available and will override any settings
 - KAFKA_BROKERS: comma-separated list of kafka broker address (host:port)
 - KAFKA_CHUNK_TOPIC: topic name for outgoing media chunk messages (default: chunk_all)
 - KAFKA_HEARTBEAT_TOPIC: topic name for engine hearbeat messages (default: engine_status)
-- VERITONE_API_BASE_URL: env-specific base URL for Veritone GraphQL API
+- API_BASE_URL: env-specific base URL for Veritone GraphQL API
 - STREAM_OUTPUT_TOPIC: output topic, partition, and prefix to write the stream to, using the convention `topic:partition:prefix` (ex: `stream_1:0:1234abcd__`)
 
 The URL to read from can be provided in any of the following ways:
